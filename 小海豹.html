@@ -23,11 +23,7 @@
             height: 60px;
             text-align: center;
             line-height: 60px;
-            margin-bottom: 50px;
-        }
-
-        .container{
-            display: flex;
+            margin-top: 50px;
         }
 
         img{
@@ -42,20 +38,24 @@
             display: none;
         }
 
-        .middle{
-            width: 50px;
-        }
-
         .left{
-            flex: 0.6;
+            float: left;
+            height: 300px;
+            width: 630px;
             background: #ff0000;
         }
 
         .right{
-            flex: 0.4;
+            float: right;
+            width: 300px;
+            height: 300px;
             background: #00ff00;
         }
 
+        .container{
+            overflow: hidden;
+        }
+        
         @media screen and (max-width:960px){
             .wrapper{
                 width: 100%;
@@ -67,14 +67,17 @@
                 display: block;
                 width: 100%;
             }
+            .left{
+                width: 66%;
+            }
+            .right{
+                width: 31%;
+            }
         }
 
         @media screen and (max-width:480px){
-            .right{
-                flex-grow: 1;
-            }
-            .left{
-                flex-grow: 1;
+            .right,.left{
+                width: 100%;
             }
             #mid-img{
                 display: none;
@@ -83,6 +86,20 @@
                 display: block;
                 width: 100%;
             }
+        }
+
+        .left{
+            display: table;
+        }
+
+        .right{
+            display: table
+        }
+
+        p{
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
         }
     </style>
 </head>
@@ -97,9 +114,12 @@
         <img id = 'small-img' src="img/01_s.jpg" alt="">
         
         <div class = 'container'>
-            <div class = 'left'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sem erat, egestas quis luctus ut, rhoncus vitae risus. Integer venenatis libero sit amet sapien dictum, quis bibendum mi volutpat. Cras pretium quam quis magna facilisis, eget feugiat nisi lacinia.</div>
-            <div class = 'middle'></div>
-            <div class = 'right'>Donec dolor arcu, interdum sed turpis faucibus, placerat ultricies felis. Donec pulvinar gravida rhoncus. Suspendisse vestibulum est eget dolor lobortis.</div>
+            <div class = 'left'>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sem erat, egestas quis luctus ut, rhoncus vitae risus. Integer venenatis libero sit amet sapien dictum, quis bibendum mi volutpat. Cras pretium quam quis magna facilisis, eget feugiat nisi lacinia.</p>
+            </div>
+            <div class = 'right'>
+                <p>Donec dolor arcu, interdum sed turpis faucibus, placerat ultricies felis. Donec pulvinar gravida rhoncus. Suspendisse vestibulum est eget dolor lobortis.</p>
+            </div>
         </div>
         <h2>尾页</h2>
         
