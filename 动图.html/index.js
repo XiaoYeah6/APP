@@ -1,8 +1,8 @@
 $('#page-2').children().addClass('hide');
+$('#page-3').children().addClass('hide');
 var iNow = 1;
 $('#container').on('swipeUp', function () {
-    console.log('123up');
-    if (iNow != 2) {
+    if (iNow != 3) {
         $('#page-' + iNow).attr('class', 'page moveToTop');
         $('#page-' + (iNow + 1)).attr('class', 'page moveFromBottom');
 
@@ -15,7 +15,6 @@ $('#container').on('swipeUp', function () {
 });
 
 $('#container').on('swipeDown', function () {
-    console.log('123down');
     if (iNow != 1) {
         $('#page-' + iNow).attr('class', 'page moveToBottom');
         $('#page-' + (iNow - 1)).attr('class', 'page moveFromTop');

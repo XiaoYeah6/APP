@@ -211,3 +211,56 @@
 .hide {
     display: none;
 }
+
+#page-3{
+    background: #f3533c;
+}
+
+#page-3 .img-1 {
+    position: absolute;
+    width: 166px;
+    top: 2%;
+    left: 50%;
+    margin-left: -86px;
+}
+
+#page-3 .img-2 {
+    position: absolute;
+    width: 250px;
+    top: 30%;
+    left: 50%;
+    margin-left: -125px;
+}
+
+#page-3 .img-3 {
+    width: 248px;
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    margin-left: -124px;
+}
+
+#page-3 .img-4 {
+    position: absolute;
+    width: 172px;
+    top: 28%;
+    left: 50%;
+    margin-left: -55px;
+}
+
+#page-3 .img-5 {
+    width: 142px;
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    margin-left: -71px;
+}
+
+#page-3 .img-6{
+    position: absolute;
+    width: 20px;
+    top: 87%;
+    left: 50%;
+    margin-left: -10px;
+}
+
